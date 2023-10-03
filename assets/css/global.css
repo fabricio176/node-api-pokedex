@@ -12,6 +12,13 @@
     padding: 1rem;
 }
 
+@media screen and (min-width:992px){
+    .content{
+        max-width: 992px;
+        margin: 0 auto;
+    }
+}
+
 .content h1{
     margin: 0;
 }
@@ -38,6 +45,11 @@
     color: black;
     opacity: 0.3;
     text-align: right;
+}
+
+.pokemon .name{
+    color: #000;
+    margin-bottom: .25rem;
 }
 
 .pokemon .detail{
