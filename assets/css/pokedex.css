@@ -1,4 +1,8 @@
+
+
+/* POKEMON ESTILIZATION */
 #pokemons {
+    width: 50%;
     list-style: none;
     grid-template-columns: 1fr;
     padding: 0;
@@ -13,6 +17,11 @@
     padding: 1rem 1rem;
     color: white;
     border-radius: 1rem;
+}
+
+.pokemon:hover{
+    background-color: rgba(128, 128, 128, 0.156);
+    cursor: pointer;
 }
 
 .pokemon .number {
@@ -57,9 +66,23 @@
     align-self: flex-end;
 }
 
+/* POKEMON CLICK */
+.pokemonClick{
+    width: 30% ;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#pokemonShow{
+    list-style: none;
+}
+
+
+/* MEDIA QUERY - RESPONSIVITY */
+
 @media screen and (min-width:380px) {
     #pokemons {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
 
     }
 }
@@ -67,13 +90,13 @@
 @media screen and (min-width:576px) {
 
     #pokemons {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (min-width:992px) {
     #pokemons {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
     }
 }
 
@@ -92,7 +115,7 @@
 .water {
     background-color: #678fee;
 } 
-.eletric{
+.electric{
     background-color: #f7cf2e;
 }
 .ice{
@@ -130,6 +153,9 @@
 }
 .fairy{
     background-color: #f9aec7;
+}
+.poison{
+    background-color: #ca72ec;
 }
 
 /* BACKGROOUND COLOR - PER POKEMON TYPE */

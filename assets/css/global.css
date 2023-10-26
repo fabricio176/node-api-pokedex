@@ -18,6 +18,17 @@ body{
     background-color: #fff;
 }
 
+.contentBody{
+    display: flex;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 40px;
+}
+
 @media screen and (min-width:992px){
     .content{
         max-width: 992px;
