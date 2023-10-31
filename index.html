@@ -40,22 +40,45 @@
                 </ol>
                 <div class="pokemonClick">
                     <ol id="pokemonShowUp">
-                        <li class="pokemonShowUp fire">
+                        <li class="pokemonShowUp grass">
                             <span class="number">#001</span>
-                            <span class="name">Pikachu</span>
+                            <span class="name">Bulbasaur</span>
                             <div class="detail">
-                                <ol class="types">
-                                    ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
-                                </ol>
-                                <img src="${pokemon.photo}" alt="${pokemon.name}">
+                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="${pokemon.name}">
                             </div>
                         </li>
-                        <li class="pokemonShowDown water">
-
+                        <li class="pokemonShowDown Downgrass">
+                            <ol class="types">
+                                <li class="type grass">Grass</li>
+                            </ol>
+                            <h3>About</h3>
+                            <ol class="pokemonInfo">
+                                <li class="infoWeight">
+                                    <span class="weight"><img src="https://cdn.icon-icons.com/icons2/1239/PNG/512/weight_83953.png" alt="Weight">9 kg</span>
+                                    <span>Weight</span>
+                                </li>
+                                <li class="infoHeight">
+                                    <span class="height"><img src="https://cdn.icon-icons.com/icons2/1491/PNG/512/ruler_102796.png" alt="Ruler">0.5 m</span>
+                                    <span>Height</span>
+                                </li>
+                                <li class="infoMoves">
+                                    <span class="moves">Torrent</span>
+                                    <span>Moves</span>
+                                </li>
+                            </ol>
+                            <h3>Base Stats</h3>
+                            <ol class="baseStats">
+                                <li>HP
+                                    45
+                                </li>
+                                <li>ATK</li>
+                                <li>DEF</li>
+                                <li>SATK</li>
+                                <li>SDEF</li>
+                                <li>SPD</li>
+                            </ol>
                         </li>
                     </ol>
-                    
-                   
                 </div>
             </div>
             <div class="pagination">

@@ -72,8 +72,9 @@
     margin: 0 auto;
     height: 450px;
 }
-
+/* POKEMON SHOW UP */
 #pokemonShowUp{
+    width: 110%;
     height: 100%;
     list-style: none;
 }
@@ -90,17 +91,47 @@
 }
 
 .pokemonShowUp .number {
-    color: black;
-    opacity: 0.3;
+    color: white;
     text-align: right;
 }
 
 .pokemonShowUp .name {
-    color: #000;
+    color: white;
     margin-bottom: .25rem;
     text-transform: capitalize;
-    
+    font-size: 20px;
 }
+
+.pokemonShowUp .detail { 
+    text-align: center;
+}
+
+.pokemonShowUp .detail img{ 
+    width: 6rem;
+}
+
+/* POKEMON SHOW DOWN */
+.pokemonShowDown .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pokemonShowDown .types .type {
+    color: white;
+    padding: .25rem 1rem;
+    margin: .25rem 0;
+    font-size: .800rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+    text-transform: capitalize;
+}
+
 
 .pokemonShowDown{
     width: 100%;
@@ -112,6 +143,96 @@
     color: white;
     border-radius: 0rem 0rem 1rem 1rem;
 }
+
+.pokemonShowDown h3{
+    text-align: center;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+.pokemonShowDown .baseStats{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.pokemonShowDown .baseStats li{
+    padding: 0.2rem;
+    
+}
+
+.pokemonInfo{
+    color: rgba(128, 128, 128, 0.616);
+    font-size: 12px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.pokemonInfo .infoWeight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.pokemonInfo .infoWeight .weight{
+    color: #A8A8A8;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.pokemonInfo .infoWeight .weight img{
+    width: 2rem;
+}
+
+.pokemonInfo .infoHeight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemonInfo .infoHeight .height{
+    color: #A8A8A8;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemonInfo .infoHeight .height img{
+    width: 2rem;
+}
+
+.pokemonInfo .infoMoves{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemonInfo .infoMoves .moves{
+    color: #A8A8A8;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 /* MEDIA QUERY - RESPONSIVITY */
@@ -135,6 +256,82 @@
         grid-template-columns: 1fr 1fr ;
     }
 }
+/* BORDER COLOR - PER POKEMON TYPE */
+.Downnormal {
+    border: 3px solid #a6a877;
+    color: #a6a877;
+}
+
+.Downgrass{
+    border: 3px solid #77c850;
+    color: #77c850;
+} 
+.Downfire{
+    border: 3px solid #ee7f30;
+    color: #ee7f30;
+}
+
+.Downwater {
+    border: 3px solid #678fee;
+    color: #678fee;
+} 
+.Downelectric{
+    border: 3px solid #f7cf2e;
+    color: #f7cf2e ;
+}
+.Downice{
+    border: 3px solid #98D5D7;
+    color: #98D5D7;
+} 
+.Downground{
+    border: 3px solid #DFBF69;
+    color: #DFBF69;
+}
+.Downflying{
+    border: 3px solid #A98FF0;
+    color:#A98FF0 ;
+}
+.Downfightinhg{
+    border: 3px solid #fb5687;
+    color: #fb5687;
+}
+.Downpsychic{
+    border: 3px solid#f65687;
+    color: #f65687;
+}
+.Downdark{
+    border: 3px solid #725847;
+    color: #725847;
+}
+.Downrock{
+    border: 3px solid #B8A137;
+    color: #B8A137;
+}
+.Downbug{
+    border: 3px solid #a8b720;
+    color: #a8b720;
+}
+.Downghost{
+    border: 3px solid #6e5896;
+    color: #6e5896;
+}
+.Downsteel{
+    border: 3px solid #b9b7cf;
+    color: #b9b7cf;
+} 
+.Downdragon{
+    border: 3px solid #6f38f6;
+    color: #6f38f6;
+}
+.Downfairy{
+    border: 3px solid #f9aec7;
+    color: #f9aec7;
+}
+.Downpoison{
+    border: 3px solid #ca72ec;
+    color: #f9aec7;
+}
+
 
 /* BACKGROOUND COLOR - PER POKEMON TYPE */
 
