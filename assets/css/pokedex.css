@@ -160,7 +160,18 @@
 
 .pokemonShowDown .baseStats li{
     padding: 0.2rem;
-    
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+
+.pokemonShowDown .baseStats li progress{
+    margin-left: 0.5rem;
+    height: 6px;
+    background-color: #000;
+    border-radius: 20px;
 }
 
 .pokemonInfo{
